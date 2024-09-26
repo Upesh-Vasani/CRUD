@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>CRUD</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>addstudent.jsp</welcome-file>
+    <welcome-file>deletemember.jsp</welcome-file>
+    <welcome-file>editmember.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Student</display-name>
+    <servlet-name>Student</servlet-name>
+    <servlet-class>com.servlet.model.Student</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Student</servlet-name>
+    <url-pattern>/Student</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StudentDAOHandler</display-name>
+    <servlet-name>StudentDAOHandler</servlet-name>
+    <servlet-class>com.servlet.handler.StudentDAOHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentDAOHandler</servlet-name>
+    <url-pattern>/StudentDAOHandler</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>deletestudent</display-name>
+    <servlet-name>deletestudent</servlet-name>
+    <servlet-class>com.servlet.controller.deletestudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletestudent</servlet-name>
+    <url-pattern>/deletestudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>editstudent</display-name>
+    <servlet-name>editstudent</servlet-name>
+    <servlet-class>com.servlet.controller.editstudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editstudent</servlet-name>
+    <url-pattern>/editstudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>registerstudent</display-name>
+    <servlet-name>registerstudent</servlet-name>
+    <servlet-class>com.servlet.controller.registerstudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registerstudent</servlet-name>
+    <url-pattern>/registerstudent</url-pattern>
+  </servlet-mapping>
+</web-app>
+</element>
